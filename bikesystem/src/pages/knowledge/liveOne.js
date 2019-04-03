@@ -1,6 +1,7 @@
 import React from 'react'
 import Child from './child.js'
-import './index.css'
+import './index.less'
+import {Button} from 'antd'
 export default class life extends React.Component{
     constructor (props) {
         super(props)
@@ -20,12 +21,10 @@ export default class life extends React.Component{
     }
     render() {
         // react的核心
-        var style = {
-            padding: 50
-        }
         return (
-            <div style={style} className="content">
+            <div className="content">
                 <p>react生命周期介绍</p>
+                <Button onClick={this.handleAdd.bind(this)}>antD dianji</Button>
                 <button onClick={this.handleAdd.bind(this)}>点击一下</button>
                 <button onClick={this.handleClick}>点击一下</button>
                 <p>{this.state.count}</p>
