@@ -12,9 +12,9 @@ export default class Admin extends React.Component{
                 <Col className="nav-left" span="4">
                     <NavLeft />
                 </Col>
-                <Col className="main">
+                <Col className="main" span="20">
                     <Header />
-                    <Row className="content" span="20">
+                    <Row className="content" >
                         content
                        {/* {this.props.children} */}
                     </Row>
