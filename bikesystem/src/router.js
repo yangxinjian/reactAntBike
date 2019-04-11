@@ -5,6 +5,12 @@ import Login from './pages/login'
 import Admin from './admin'
 import Buttons from './pages/ui/button'
 import NoMatch from './components/nomatch';
+import Modal from './pages/ui/modal'
+import Loading from './pages/ui/loading';
+import Notification from './pages/ui/notification';
+import Messages from './pages/ui/message';
+import Tab from './pages/ui/tab';
+import Gallery from './pages/ui/gallery';
 export default class IRouter extends React.Component{
     render () {
         return (
@@ -16,6 +22,12 @@ export default class IRouter extends React.Component{
                         <Admin>
                             <Switch>
                             <Route path="/admin/ui/buttons" component={Buttons}/>
+                            <Route path="/admin/ui/modals" component={Modal}/>
+                            <Route path="/admin/ui/loading" component={Loading}/>
+                            <Route path="/admin/ui/notification" component={Notification}/>
+                            <Route path="/admin/ui/messages" component={Messages}/>
+                            <Route path="/admin/ui/tabs" component={Tab}/>
+                            <Route path="/admin/ui/gallery" component={Gallery}/>
                             <Route component={NoMatch}></Route>
                             </Switch>
                         </Admin>
