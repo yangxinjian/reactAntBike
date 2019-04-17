@@ -45,11 +45,12 @@ export default class BasicTable extends React.Component {
     // 删除操作
     handleDelete = (item)=>{
         let id = item.id;
+        // conso
         Modal.confirm({
             title:'确认',
             content:'您确认要删除此条数据吗？',
             onOk:()=>{
-                message.success('删除成功');
+                message.success(`删除${id}成功`);
                 this.request();
             }
         })
@@ -115,9 +116,9 @@ export default class BasicTable extends React.Component {
             },
             {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             },
             {
                 title: '地址',
@@ -193,90 +194,90 @@ export default class BasicTable extends React.Component {
             },
             {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             },
             {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             }, {
                 title: '生日',
-                key: 'birth',
+                key: 'birthday',
                 width: 120,
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             },
             {
                 title: '地址',
@@ -356,8 +357,8 @@ export default class BasicTable extends React.Component {
             },
             {
                 title: '生日',
-                key: 'birth',
-                dataIndex: 'birth'
+                key: 'birthday',
+                dataIndex: 'birthday'
             },
             {
                 title: '地址',
@@ -420,7 +421,7 @@ export default class BasicTable extends React.Component {
             },
             {
                 title: '生日',
-                dataIndex: 'birth'
+                dataIndex: 'birthday'
             },
             {
                 title: '地址',
