@@ -5,7 +5,11 @@ import Login from './pages/login'
 import Admin from './admin'
 import Buttons from './pages/ui/button'
 import NoMatch from './components/nomatch';
+import Bar from './pages/echarts/bar/index'
+import Pie from './pages/echarts/pie/index'
+import Line from './pages/echarts/line/index'
 import Modal from './pages/ui/modal'
+import Permission from './pages/permission'
 import Loading from './pages/ui/loading';
 import Notification from './pages/ui/notification';
 import Messages from './pages/ui/message';
@@ -20,6 +24,8 @@ import CityHome from './pages/city';
 import Order from './pages/order';
 import Common from './common';
 import Detail from './pages/order/detail';
+import User from './pages/user';
+import BikeMap from './pages/map/bikeMap';
 export default class IRouter extends React.Component{
     render () {
         return (
@@ -41,8 +47,14 @@ export default class IRouter extends React.Component{
                             <Route path="/admin/ui/carousel" component={Carousels}/>
                             <Route path="/admin/form/reg" component={Registers}/>
                             <Route path="/admin/table/basic" component={TableBase}/>
+                            <Route path='/admin/user' component={User} />
+                            <Route path='/admin/bikeMap' component={BikeMap} />
                             <Route path="/admin/table/high" component={TableHigh}/>
+                            <Route path="/admin/permission" component={Permission} />
                             <Route path="/admin/city" component={CityHome}/>
+                            <Route path="/admin/charts/bar" component={Bar} />
+                                    <Route path="/admin/charts/pie" component={Pie} />
+                                    <Route path="/admin/charts/line" component={Line} />
                             <Route path="/admin/order" component={Order}/>
                             <Route component={NoMatch}></Route>
                             </Switch>
