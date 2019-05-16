@@ -8,6 +8,7 @@ import NoMatch from './components/nomatch';
 import Bar from './pages/echarts/bar/index'
 import Pie from './pages/echarts/pie/index'
 import Line from './pages/echarts/line/index'
+import Rich from './pages/rich'
 import Modal from './pages/ui/modal'
 import Permission from './pages/permission'
 import Loading from './pages/ui/loading';
@@ -52,6 +53,7 @@ export default class IRouter extends React.Component{
                             <Route path="/admin/table/high" component={TableHigh}/>
                             <Route path="/admin/permission" component={Permission} />
                             <Route path="/admin/city" component={CityHome}/>
+                            <Route path='/admin/rich' component={Rich} />
                             <Route path="/admin/charts/bar" component={Bar} />
                                     <Route path="/admin/charts/pie" component={Pie} />
                                     <Route path="/admin/charts/line" component={Line} />
